@@ -1,0 +1,14 @@
+RewriteEngine on
+#RewriteRule ^home$ ?page=home [L]
+RewriteRule ^home\.html$ index.php?r=home [L]
+RewriteRule ^read/(.*)/(.*).html index.php?r=post/view&id=$1 [L] 
+
+#RewriteRule ^index-album^ index.php?r=mmage/albumindex [L]
+RewriteRule ^index-album/(.*) index.php?r=mmage/albumindex&page=$1 [L,QSA]
+RewriteRule ^index-album      index-album/ 
+RewriteRule ^photo-album/(.*) index.php?r=mmage/photoalbum&param=$1 [L] 
+RewriteRule ^index-news     index.php?r=news
+
+RewriteRule ^news/(.*)/(.*).html index.php?r=news/view&id=$1 [L]
+
+Options All -Indexes

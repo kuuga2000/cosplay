@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- BEGIN html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<!-- BEGIN head -->
+	<head>
+
+		<!-- Title -->
+		<title>KERNEL - Premium WordPress Blog &amp; Magazine Theme</title>
+
+		<!-- Meta Tags -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/main-stylesheet.css" type="text/css" />
+		<link rel="stylesheet" href="css/sexy-slider.css" type="text/css" />
+		<link rel="stylesheet" href="css/shortcodes.css" type="text/css" />
+
+		<!-- JavaScripts -->
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.placeholder.min.js" type="text/javascript"></script>
+		<script src="js/cufon-yui.js" type="text/javascript"></script>
+		<script src="js/cufon-replace.js" type="text/javascript"></script>
+		<script src="js/cachet.font.js" type="text/javascript"></script>
+		<script src="js/jquery.sexyslider-blog.js" type="text/javascript"></script>
+		<script src="js/text-scroller.js" type="text/javascript"></script>
+		<script src="js/scripts.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// hide #back-top first
+				// $("#back-top").hide();
+				// fade in #back-top
+				$(function () {
+					$(window).scroll(function () { });
+					// scroll body to 0px on click
+					$('.back-to-top a').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+						}, 800);
+						return false;
+					});
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#blog-slider").SexySlider({
+					//width      : 569,
+					//height     : 350,
+					//delay      : 3000,
+					//strips     : 20,
+					autopause  : true,
+					effect     : 'fade',
+					onTitleHide     : function() { Cufon.replace('.sexyslider-title a', { textShadow: '#3e0000 0 1px', hover: 'true' } ); }
+				});
+			});
+		</script>
+
+	<!-- END head -->
+	</head>
+
+	<!-- BEGIN body -->
+	<body class="top">
+
+
+		<!-- BEGIN .main-content-wrapper -->
+		<div class="main-content-wrapper">
+
+			<!-- BEGIN .main-content -->
+			<div class="main-content">
+
+
+				<!-- BEGIN .main-header -->
+				<div class="main-header">
+					<div class="logo">
+						<a href="homepage-3.html"><img src="images/logo-kernel-1.png" alt="KERNEL" width="166" height="28" /></a>
+					</div>
+					<div class="search">
+						<form action="">
+							<input type="text" class="input-text" placeholder="search here" />
+							<input type="submit" class="input-submit" value="" />
+						</form>
+					</div>
+					<div class="social">
+						<a href="#"><img src="images/ico-digg-1.png" alt="DIGG" width="19" height="19" /></a>
+						<a href="#"><img src="images/ico-youtube-1.png" alt="YouTube" width="19" height="19" /></a>
+						<a href="#"><img src="images/ico-flickr-1.png" alt="Flickr" width="19" height="19" /></a>
+						<a href="#"><img src="images/ico-facebook-1.png" alt="Facebook" width="19" height="19" /></a>
+						<a href="#"><img src="images/ico-twitter-1.png" alt="Twitter" width="19" height="19" /></a>
+						<a href="#"><img src="images/ico-rss-1.png" alt="RSS" width="19" height="19" /></a>
+					</div>
+				<!-- END .main-header -->
+				</div>
+
+
+				<!-- BEGIN .main-menu-wrapper -->
+				<div class="main-menu-wrapper">
+					<span class="corner-left">&nbsp;</span>
+					<ul>
+						<li><a href="homepage-3.html">Homepage</a></li>
+						<li>
+							<a href="blog-style-1.html"><span>Blog</span></a>
+							<ul>
+								<li><a href="blog-style-1.html">Blog style 1 with small images</a></li>
+								<li><a href="blog-style-2.html">Blog style 2 with big images</a></li>
+								<li>
+									<a href="post-style-1.html"><span>Single post test blog entry</span></a>
+									<ul>
+										<li><a href="post-style-1.html">Single post with small image</a></li>
+										<li><a href="post-style-2.html">Single post with big image</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><span>Shortcodes</span></a>
+							<ul>
+								<li><a href="shortcodes-buttons.html">Buttons</a></li>
+								<li><a href="shortcodes-layouts.html">Layouts</a></li>
+								<li><a href="shortcodes-spacers.html">Spacers</a></li>
+								<li><a href="shortcodes-lists.html">Lists</a></li>
+								<li><a href="shortcodes-quotes.html">Quotes</a></li>
+								<li><a href="shortcodes-contact-form.html">Contact form</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="photo-gallery.html"><span>Photo gallery</span></a>
+							<ul>
+								<li><a href="photo-gallery.html">Photo gallery index</a></li>
+								<li><a href="photo-gallery-list.html">Opened gallery image list</a></li>
+								<li><a href="photo-gallery-single.html">Single image</a></li>
+							</ul>
+						</li>
+						<li><a href="archive.html">Archive</a></li>
+					</ul>
+				<!-- END .main-menu-wrapper -->
+				</div>
+
+
+				<!-- BEGIN .breaking-wrapper -->
+				<div class="breaking-wrapper">
+					<p>Breaking:</p>
+					<div class="horizontal-scroller">
+						<div id="scrollingtext">
+							<img src="images/ico-list-bullet-1.png" alt="" width="7" height="6" /><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing rnare laoreet vehicula</a>
+							<img src="images/ico-list-bullet-1.png" alt="" width="7" height="6" /><a href="#">Praesent ultricies porta condimentum suspendisse potenti</a>
+							<img src="images/ico-list-bullet-1.png" alt="" width="7" height="6" /><a href="#">Vivamus fermentum nisl a sapien luctus et venenatis urna hendrerit</a>
+						</div>
+					</div>
+				<!-- END .breaking-wrapper -->
+				</div>
+
+
+				<!-- BEGIN .main-column-wrapper -->
+				<div class="main-column-wrapper">
+
+
+					<!-- BEGIN .main-column-left -->
+					<div class="main-column-left">
+
+						<div class="blog-slider-wrapper">
+							<!-- BEGIN .blog-slider -->
+							<div class="blog-slider">
+								<div id="blog-slider">
+										<img src="images/photos/no-image-569x281.jpg" alt="&lt;a href=&quot;#&quot;&gt;&lt;b&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elitam eunisi dapibus adipiscing magna sed cursus sapien condimentum&lt;/b&gt;&lt;/a&gt;" width="569" height="281" />
+										<img src="images/photos/no-image-569x281.jpg" alt="&lt;a href=&quot;#&quot;&gt;&lt;b&gt;Pellentesque vel turpis nec leo tincidunt sollicitudin ac non risus, nam suscipit fermentum massa consequat aliquam&lt;/b&gt;&lt;/a&gt;" width="569" height="281" />
+										<img src="images/photos/no-image-569x281.jpg" alt="&lt;a href=&quot;#&quot;&gt;&lt;b&gt;Maecenas neque est, feugiat quis porta in, condimentum eget arcu. Maecenas fringilla aliquam ultricies&lt;/b&gt;&lt;/a&gt;" width="569" height="281" />
+										<img src="images/photos/no-image-569x281.jpg" alt="&lt;a href=&quot;#&quot;&gt;&lt;b&gt;Curabitur orci tortor, ultrices quis scelerisque sit amet, laoreet eget purus&lt;/b&gt;&lt;/a&gt;" width="569" height="281" />
+										<img src="images/photos/no-image-569x281.jpg" alt="&lt;a href=&quot;#&quot;&gt;&lt;b&gt;Donec vel velit vitae dui pulvinar semper vitae nec massan, nam suscipit fermentum massa consequat aliquam&lt;/b&gt;&lt;/a&gt;" width="569" height="281" />
+								</div>
+								<div class="thumbs" id="thumbs"></div>
+								<div class="shadow">&nbsp;</div>
+							<!-- END .blog-slider -->
+							</div>
+						</div>
+
+						<!-- BEGIN .blog-style-2 -->
+						<div class="blog-style-2">
+
+							<!-- BEGIN .item -->
+							<div class="item">
+								<h2><a href="#">Maecenas lacus nunc rutrum vitae pharetra eu portaleo imperdiet</a></h2>
+								<div class="info">
+									<span class="date">12 January, 2011</span>
+									<span class="author">by John Smith</span>
+									<span class="section">Section</span>
+									<a href="#" class="comments">5 comments</a>
+								</div>
+								<a href="#"><img src="images/photos/no-image-567x180.jpg" alt="" width="567" height="180" class="image" /></a>
+								<p>Maecenas neque est, feugiat quis porta in, condimentum eget arcu. Maecenas fringilla aliquam ultricies. Pellentesque vel turpis nec leo tincidunt sollicitudin ac non risus. Ves tibu lum ultrices feugiat velit, quis tincidunt velit volutpat nec. Vivamus pharetra fringilla augue, a elementum ante ultrices tincidunt. Ut mi ligula, interdum ut pharetra id, imperd iet.</p>
+								<p class="last"><a href="#" class="more-link"><span>Read more</span></a></p>
+							<!-- END .item -->
+							</div>
+
+							<!-- BEGIN .item -->
+							<div class="item">
+								<h2><a href="#">Nunc ullamcorper ipsum at ultrices tempor</a></h2>
+								<div class="info">
+									<span class="date">12 January, 2011</span>
+									<span class="author">by John Smith</span>
+									<span class="section">Section</span>
+									<a href="#" class="comments">7 comments</a>
+								</div>
+								<a href="#"><img src="images/photos/no-image-567x180.jpg" alt="" width="567" height="180" class="image" /></a>
+								<p>Suspendisse lacinia, lacus eu pulvinar gravida, dui orci congue lorem, sit amet tincidunt orci sapien sed eros. In hac habitasse platea dictumst. Fusce lorem urna, imperdiet a pulvinar vel, rhoncus tristique lorem. Mauris sem sapien, vestibulum quis fringilla in, bibendum.</p>
+								<p class="last"><a href="#" class="more-link"><span>Read more</span></a></p>
+							<!-- END .item -->
+							</div>
+
+							<!-- BEGIN .item -->
+							<div class="item">
+								<h2><a href="#">Aenean lectus turpis eugiat adipiscing non aliquam ut dolor curabitur malesuada</a></h2>
+								<div class="info">
+									<span class="date">12 January, 2011</span>
+									<span class="author">by John Smith</span>
+									<span class="section">Section</span>
+									<a href="#" class="comments">0 comments</a>
+								</div>
+								<a href="#"><img src="images/photos/no-image-567x180.jpg" alt="" width="567" height="180" class="image" /></a>
+								<p>Maecenas neque est, feugiat quis porta in, condimentum eget arcu. Maecenas fringilla aliquam ultricies. Pellentesque vel turpis nec leo tincidunt sollicitudin ac non risus. Ves tibu lum ultrices feugiat velit, quis tincidunt velit volutpat nec. Vivamus pharetra fringilla augue, a elementum ante ultrices tincidunt. Ut mi ligula, interdum ut pharetra id, imperd iet.</p>
+								<p class="last"><a href="#" class="more-link"><span>Read more</span></a></p>
+							<!-- END .item -->
+							</div>
+
+							<!-- BEGIN .item -->
+							<div class="item">
+								<h2><a href="#">Curabitur purus maurisursus nec egestas vitae</a></h2>
+								<div class="info">
+									<span class="date">12 January, 2011</span>
+									<span class="author">by John Smith</span>
+									<span class="section">Section</span>
+									<a href="#" class="comments">9 comments</a>
+								</div>
+								<a href="#"><img src="images/photos/no-image-567x180.jpg" alt="" width="567" height="180" class="image" /></a>
+								<p>Donec vel velit vitae dui pulvinar semper vitae nec massa. Nam suscipit fermentum massa consequat aliquam. Suspendisse eget nulla non justo eleifend pulvinar. Donec consectetur consectetur placerat. Curabitur non nunc a nulla ultricies lacinia ac malesuada mauris.</p>
+								<p class="last"><a href="#" class="more-link"><span>Read more</span></a></p>
+							<!-- END .item -->
+							</div>
+
+							<div class="pages">
+								<div>
+									<a href="#">1</a>
+									<a href="#" class="active">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">7</a>
+								</div>
+								<a href="#" class="next">Next</a>
+								<a href="#" class="previous">Previous</a>
+							</div>
+
+						<!-- END .blog-style-2 -->
+						</div>
+
+					<!-- END .main-column-left -->
+					</div>
+
+
+					<!-- BEGIN .sidebar -->
+					<div class="sidebar">
+
+						<!-- BEGIN .sidebar-item .latest-news -->
+						<div class="sidebar-item">
+							<div class="latest-news">
+								<div class="sidebar-title">
+									<b>Latest news</b>
+								</div>
+								<!-- BEGIN .list -->
+								<div class="list">
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="image">
+											<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+										</div>
+										<div class="text">
+											<h5><a href="#">Maecenas pretium facilisis lectus sed</a></h5>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="image">
+											<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+										</div>
+										<div class="text">
+											<h5><a href="#">Pellentesque aliquet orcid ornare quamsit</a></h5>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="image">
+											<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+										</div>
+										<div class="text">
+											<h5><a href="#">Pellentesque aliquet orcid ornare quamsit</a></h5>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+								<!-- END .list -->
+								</div>
+								<p class="show-all"><a href="#" class="btn-1 btn-1-color-default"><span>Show all latest news</span></a></p>
+							</div>
+						<!-- END .sidebar-item .latest-news -->
+						</div>
+
+						<!-- BEGIN .sidebar-item .latest-activity -->
+						<div class="sidebar-item">
+							<div class="latest-activity">
+								<div class="sidebar-title">
+									<b>Latest activity</b>
+								</div>
+									<!-- BEGIN .tabs-1 -->
+									<div class="tabs-1">
+										<table>
+											<tr>
+												<td><a href="#" class="tab-1 kernel_triple_btn active" id="kernel_triple_popular_btn_kernel_3"><span>Popular</span></a></td>
+												<td><a href="#" class="tab-1 tab-1-disabled kernel_triple_btn" id="kernel_triple_recent_btn_kernel_3"><span>Recent</span></a></td>
+												<td><a href="#" class="tab-1 tab-1-disabled kernel_triple_btn" id="kernel_triple_comments_btn_kernel_3"><span>Comments</span></a></td>
+											</tr>
+										</table>
+									<!-- END .tabs-1 -->
+									</div>
+									
+								<div id="kernel_triple_popular_kernel_3">
+									<!-- BEGIN .list -->
+									<div class="list">
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Vestibulum ante ipsum primis in faucibus orci</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Aenean iaculis, risus eget sollicitudin</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Pellentesque aliquet orcid ornare quamsit</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+									<!-- END .list -->
+									</div>
+								</div>									
+								<div id="kernel_triple_recent_kernel_3" style="display: none;">
+									<!-- BEGIN .list -->
+									<div class="list">
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Aenean iaculis, risus eget sollicitudin</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Vestibulum ante ipsum primis in faucibus orci</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Pellentesque aliquet orcid ornare quamsit</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+									<!-- END .list -->
+									</div>
+								</div>									
+								<div id="kernel_triple_comments_kernel_3" style="display: none;">
+									<!-- BEGIN .list -->
+									<div class="list">
+
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Pellentesque aliquet orcid ornare quamsit</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Aenean iaculis, risus eget sollicitudin</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+										<!-- BEGIN .item -->
+										<div class="item">
+											<div class="image">
+												<a href="#"><img src="images/photos/no-image-70x70.jpg" alt="" width="60" height="60" /></a>
+											</div>
+											<div class="text">
+												<h5><a href="#">Vestibulum ante ipsum primis in faucibus orci</a></h5>
+												<p><a href="#" class="more-link"><span>Read more</span></a></p>
+											</div>
+										<!-- END .item -->
+										</div>
+									<!-- END .list -->
+									</div>
+								</div>
+							</div>
+						<!-- END .sidebar-item .latest-activity -->
+						</div>
+
+						<!-- BEGIN .sidebar-item .latest-articles -->
+						<div class="sidebar-item last">
+							<div class="latest-articles">
+								<div class="sidebar-title">
+									<b>Latest news</b>
+								</div>
+								<!-- BEGIN .list -->
+								<div class="list">
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="text">
+											<h5><a href="#">Aliquam in condimentum augue</a></h5>
+											<div class="info">
+												<span class="date">10 / 01 / 2011 / <a href="#">3 comments</a></span>
+											</div>
+											<p>Cras vulputate dui at felis varius et consecte tur risus viverra. Vivamus commodo gravida malesuada.consequat dui.</p>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="text">
+											<h5><a href="#">Mauris tristique, orci eu elemenaccu msanarcuarcu porttitor</a></h5>
+											<div class="info">
+												<span class="date">10 / 01 / 2011 / <a href="#">20 comments</a></span>
+											</div>
+											<p>Morbi eget massa tortor, id porta dui. Nam id iaculis eros. Nunc nibh sem, interdum vitae vestibulum in, scelerisque sed nisl incidunt.</p>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+									<!-- BEGIN .item -->
+									<div class="item">
+										<div class="text">
+											<h5><a href="#">Suspendisse ligula mauris, cursus ut convallis atdapibus nec ante</a></h5>
+											<div class="info">
+												<span class="date">10 / 01 / 2011 / <a href="#">3 comments</a></span>
+											</div>
+											<p>Morbi luctus dui euismod mauris consequat hendrerit. Curabitur orci tortor, ultrices quis scelerisque sit amet, laoreet eget purus.</p>
+											<p><a href="#" class="more-link"><span>Read more</span></a></p>
+										</div>
+									<!-- END .item -->
+									</div>
+								<!-- END .list -->
+								</div>
+								<p class="show-all"><a href="#" class="btn-1 btn-1-color-default"><span>Show all latest news</span></a></p>
+							</div>
+						<!-- END .sidebar-item .latest-articles -->
+						</div>
+
+					<!-- END .sidebar -->
+					</div>
+
+
+					<div class="clear">&nbsp;</div>
+
+
+				<!-- END .main-column-wrapper -->
+				</div>
+
+
+			<!-- BEGIN .main-footer -->
+			<div class="main-footer">
+				<div class="about">
+					<h2>About Kernel Wordpress theme</h2>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu nisi ante, dapibus adipiscing magna. Cras a leo a magna. Phasellus enim libero, blandit ac tempor</p>
+						<p>Nulla hendrerit nunc sit amet nunc rutrum sed cursus sapien condimentum.</p>
+						<p><a href="#" class="purchase">Purchase KERNEL at ThemeForest</a></p>
+					</div>
+				</div>
+				<div class="categories">
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="#">Technology</a></li>
+						<li><a href="#">Fashion &amp; Design</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">Music</a></li>
+						<li><a href="#">Games &amp; Entertainment</a></li>
+						<li><a href="#">Cars, Bikes &amp; Bicycles</a></li>
+						<li><a href="#">Uncategorized</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<h2>Social networks</h2>
+					<ul>
+						<li><a href="#" class="twitter">Follow us on Twitter</a></li>
+						<li><a href="#" class="facebook">Friend un on Facebook</a></li>
+						<li><a href="#" class="digg">Dig us at Digg</a></li>
+						<li><a href="#" class="youtube">Watch our YouTube channel</a></li>
+						<li><a href="#" class="flickr">Check our photos at Flickr</a></li>
+						<li><a href="#" class="rss">RSS feeds</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<div class="back-to-top"><a href="#top"><span>go back to the top</span></a></div>
+					Copyright &amp; Design © 2011 by <b>Orange-Themes.com</b>
+				</div>
+			<!-- END .main-footer -->
+			</div>
+
+
+			<!-- END .main-content -->
+			</div>
+
+		<!-- END .main-content-wrapper -->
+		</div>
+
+
+	<!-- END body -->
+	</body>
+
+<!-- END html -->
+</html>

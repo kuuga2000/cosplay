@@ -1,0 +1,41 @@
+<!-- BEGIN .row -->
+				<div class="row">
+					<!-- BEGIN .index-item -->
+					<?php foreach($dataPhoto_1 as $photo):
+					?>
+					<div class="index-item">
+						<?=$photo['gallery_title'];?>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><img src="<?=Yii::app() -> request -> baseUrl;?>/assets/thumb/thumb.php?w=125&h=125&zc=1&src=../../images/<?=$photo['gallery_cover'];?>" title="<?=$photo['gallery_title'];?>" alt="" height="125" width="125"></a>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><?=$photo['gallery_description'];?></a>
+						<!-- END .index-item -->
+					</div>
+					<?php endforeach;?>
+				</div>
+				<!-- BEGIN .row -->
+				<div class="row">
+					<!-- BEGIN .index-item -->
+					<?php foreach($dataPhoto_2 as $photo):
+					?>
+
+					<div class="index-item">
+						<?=$photo['gallery_title'];?>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><img src="<?=Yii::app() -> request -> baseUrl;?>/assets/thumb/thumb.php?w=125&h=125&zc=1&src=../../images/<?=$photo['gallery_cover'];?>" title="<?=$photo['gallery_title'];?>" alt="" height="125" width="125"></a>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><?=$photo['gallery_description'];?></a>
+						<!-- END .index-item -->
+					</div>
+					<?php endforeach;?>
+				</div>
+					<!-- BEGIN .row -->
+				<div class="row">
+					<!-- BEGIN .index-item -->
+					<?php foreach($dataPhoto_3 as $photo):
+					?>
+
+					<div class="index-item">
+						<?=$photo['gallery_title'];?>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><img src="<?=Yii::app() -> request -> baseUrl;?>/assets/thumb/thumb.php?w=125&h=125&zc=1&src=../../images/<?=$photo['gallery_cover'];?>" title="<?=$photo['gallery_title'];?>" alt="" height="125" width="125"></a>
+						<a href="<?=$this -> baseUrl();?>/photo-album/<?=$this -> addStrip($photo['gallery_title']);?>"><?=$photo['gallery_description'];?></a>
+						<!-- END .index-item -->
+					</div>
+					<?php endforeach;?>
+				</div>
